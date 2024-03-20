@@ -1,0 +1,206 @@
+/* Criei essas variavéis afim de evitar repetição de código */
+:root {
+    --cor-primária:#0A3871;
+    --fonte-primária: "Inter",sans-serif;
+    --alinhamento-dos-itens: center;
+    --alinhamento-do-texto: center;
+    --peso-da-fonte: 400;
+    --font-size: 1rem;
+}
+
+
+body {
+    background: #F3F5FC;
+}
+/* main - container */
+.main__area {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-evenly;
+}
+
+#author__area{
+    display: block;
+    flex-direction: column;
+    gap: 5%;
+    text-align: center;
+}
+
+#logo {
+    width: 4.375rem;
+    height: 4.7rem;
+    padding: 5%;
+}
+
+#author{
+    margin-top: 2%;
+    font-family: var(--fonte-primária);
+    font-size: 1rem;
+    font-weight: var(--peso-da-fonte);
+}
+
+/* Container da área de digitação */
+.main__area__interaction {
+    display: block;
+    width: 40%;
+}
+
+#text__write {
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    background: #F3F5FC;
+}
+
+::placeholder {
+    padding-top: 10%;
+    padding-left: 2%;
+    font-family: var(--fonte-primária);
+    font-size: 2rem;
+    font-weight: var(--peso-da-fonte);
+    text-align: left;
+    color: var(--cor-primária);
+}
+
+.main__area__interaction__observation {
+    display: flex;
+    align-items: var(--alinhamento-dos-itens);
+    gap: 1.25rem;
+}
+
+/* Container dos botões */
+.main__area__interaction__buttons {
+    display: flex;
+    align-items: var(--alinhamento-dos-itens);
+    justify-content: space-between;
+}
+
+.main__area__interaction__buttons__code {
+    border-radius: 1rem;
+    width: 45%;
+    height: 8vh;
+}
+
+#btn-encrypt {
+    color: #FFFFFF;
+    background: var(--cor-primária);
+    font-family: var(--fonte-primária);
+    font-size: var(--font-size);
+    font-weight: var(--peso-da-fonte);
+    text-align: var(--alinhamento-do-texto);
+}
+
+#btn-encrypt:hover {
+    cursor: pointer;
+    background: #0f4d97;
+}
+
+
+#btn-decrypt {
+    color: var(--cor-primária);
+    border: var(--cor-primária) solid 1px;
+    background: #D8DFE8; 
+    font-family: var(--fonte-primária);
+    font-size: var(--font-size);
+    font-weight: var(--peso-da-fonte);
+    text-align: var(--alinhamento-do-texto);
+}
+
+#btn-decrypt:hover {
+    cursor: pointer;
+    background: #b6bcc4;
+}
+
+/* Container da área de cópia */
+#area__copy {
+    display: block;
+    align-items: var(--alinhamento-dos-itens);
+    border-radius: 1.25rem;
+    background-color: #FFFFFF;
+    width: 20%;
+}
+
+#imagem-mascote {
+    width: 100%;
+    height: 45%;
+    margin-top: 20% ;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#title {
+    font-family: var(--fonte-primária);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: var(--alinhamento-do-texto);
+    color: #343A40;
+}
+
+#subtitle {
+    font-family: var(--fonte-primária);
+    font-size: var(--font-size);
+    font-weight: var(--peso-da-fonte);
+    text-align: var(--alinhamento-do-texto);
+    color: #495057;
+}
+
+#text__read{
+    border: none;
+    background: #FFFFFF;
+    border-radius: 1.25rem;
+    width: 98.5%;
+}
+
+#btn-copy {
+    font-family: var(--fonte-primária);
+    font-size: var(--font-size);
+    font-weight: var(--peso-da-fonte);
+    text-align: var(--alinhamento-do-texto);
+    border: var(--cor-primária) solid 1px;
+    border-radius: 1rem;
+    width: 50%;
+    height: 8vh;
+    margin:7% 0% 2% 25%; /*Top-right-bottom-left*/
+    color: var(--cor-primária);
+}
+
+#btn-copy:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: var(--cor-primária);
+}
+
+/* Container do rodapé */
+.footer__area{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-primária);
+    color: #FFFFFF;
+    
+}
+
+.footer__area__images__container{
+    width: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 2vh;
+}
+
+.img__footer{
+    width: 80%;
+    height: 80%;
+}
+
+.img__footer:hover{
+    scale: 1.2;
+}
+
+#author{
+    font-family: var(--fonte-primária);
+    font-size: var(--font-size);
+    font-weight: var(--peso-da-fonte);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/orange-image 1.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Codificador</title>
+    </head>
+    <body>
+        <header></header>
+        <main class="main__area">
+            <div id="author__area">
+                <img id="logo" src="./assets/orange-image 1.png" alt="Logo" title="Logo">
+            </div>
+            <section class="main__area__interaction">
+                <textarea id="text__write" cols="50" rows="33" placeholder="Digite seu texto aqui..." title="Local para digitar"></textarea>
+                <div class="main__area__interaction__observation">
+                    <img src="./assets/icone-exclamacao.png" alt="Observação">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="main__area__interaction__buttons">
+                    <button class="main__area__interaction__buttons__code" id="btn-encrypt" onclick="encrypt()" title="Botão de criptografar">Criptografar</button>
+                    <button class="main__area__interaction__buttons__code" id="btn-decrypt" onclick="decrypt()" title="Botão de descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <!-- Tive que deixar a section abaixo com id , porque como class não rodava a function de copiar. -->
+            <section id="area__copy">
+                <img id="imagem-mascote" src="./assets/mascote.png" alt="imagem-do-mascote">
+                <h2 id="title">Nenhuma mensagem encontrada</h2>
+                <p id="subtitle">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </section>
+        </main>
+        <footer class="footer__area">
+           <div class="footer__area__images__container">
+                <a href="https://linkedin.com/in/kleber-ribeiro-197955247"><img class="img__footer" src="./assets/linkedin-icon.png" alt="ícone do Linkedin" title="Acesse meu Linkedin"></a>
+                <a href="https://github.com/Kleber-Ribeiro"><img class="img__footer" src="./assets/github.png" alt="Ícone do GitHub" title="Acesse meu Github"></a>   
+           </div> 
+           <h2 id="author" title="Desenvolvido por Kleber Ribeiro">Desenvolvido por Kleber Ribeiro</h2>
+        </footer>
+    </body>
+    <script src="encriptador.js" defer></script>
+</html>
